@@ -1,0 +1,280 @@
+n<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worlducation – Empowering Every Child</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        color: #333;
+    }
+    header {
+        background: #0073e6;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+    nav {
+        background: #005bb5;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px 0;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    section {
+        padding: 50px 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+    section h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #0073e6;
+    }
+    .about, .products, .impact, .team, .news, .contact {
+        background: #f9f9f9;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    .team-member {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .member-card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 200px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .cta-button {
+        display: inline-block;
+        background: #ff9900;
+        color: #fff;
+        padding: 10px 20px;
+        margin-top: 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .cta-button:hover {
+        background: #cc7a00;
+    }
+    footer {
+        text-align: center;
+        background: #0073e6;
+        color: #fff;
+        padding: 20px 0;
+    }
+    /* Video styles */
+    .video-container {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+    }
+    video {
+        width: 100%;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    /* Interactive map */
+    #world-map {
+        width: 100%;
+        max-width: 800px;
+        height: 500px;
+        margin: 30px auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        background: url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg') no-repeat center center;
+        background-size: contain;
+        position: relative;
+    }
+    .map-pin {
+        width: 20px;
+        height: 20px;
+        background: #ff9900;
+        border-radius: 50%;
+        position: absolute;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+    .map-pin:hover {
+        transform: scale(1.5);
+    }
+    /* Infographics */
+    .stats-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 30px;
+    }
+    .stat-card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        width: 200px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .stat-number {
+        font-size: 2.5rem;
+        color: #0073e6;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Worlducation</h1>
+    <p>Empowering Every Child to Learn – One Classroom at a Time</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#impact">Impact</a>
+    <a href="#team">Team</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p><strong>Mission:</strong> To be the change and facilitate a world without illiteracy by transforming how children learn and increasing school access to technology.</p>
+    <p><strong>Vision:</strong> A world without illiteracy.</p>
+    <p><strong>Core Values:</strong> Ethical principles, Innovation, Collaboration.</p>
+    <p>Founded in 2016, Worlducation creates tablets and educational content for primary students. Our AI-powered learning adapts to each child’s needs. For every purchased classroom, we donate a classroom elsewhere and connect them to collaborate.</p>
+
+    <!-- Video placeholder -->
+    <div class="video-container">
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+<section id="products" class="products">
+    <h2>Products & Services</h2>
+    <p><strong>Hardware:</strong> Durable, child-friendly tablets optimized for classrooms.</p>
+    <p><strong>Software & Content:</strong> AI-driven personalized learning, curriculum-aligned activities.</p>
+    <p><strong>Collaborative Learning:</strong> Linking classrooms globally for shared learning.</p>
+    <p><strong>Future Options:</strong> Cloud solutions, repurposed tablets, manufacturing expansion.</p>
+</section>
+
+<section id="impact" class="impact">
+    <h2>Our Impact</h2>
+
+    <!-- Interactive world map -->
+    <div id="world-map">
+        <div class="map-pin" style="top:40%; left:45%;" title="Australia"></div>
+        <div class="map-pin" style="top:20%; left:55%;" title="Bulgaria"></div>
+        <div class="map-pin" style="top:60%; left:65%;" title="Hong Kong"></div>
+        <div class="map-pin" style="top:35%; left:30%;" title="Colombia"></div>
+        <div class="map-pin" style="top:45%; left:20%;" title="Egypt"></div>
+        <div class="map-pin" style="top:15%; left:10%;" title="Iceland"></div>
+        <div class="map-pin" style="top:40%; left:80%;" title="Philippines"></div>
+        <div class="map-pin" style="top:25%; left:70%;" title="Russia"></div>
+    </div>
+
+    <!-- Infographics -->
+    <div class="stats-container">
+        <div class="stat-card">
+            <div class="stat-number">35,000+</div>
+            <div>Tablets Sold</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">550+</div>
+            <div>Schools Worldwide</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">23</div>
+            <div>Countries Reached</div>
+        </div>
+    </div>
+</section>
+
+<section id="team" class="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-member">
+        <div class="member-card">
+            <h3>Lucas Lopez</h3>
+            <p>CEO & Founder</p>
+        </div>
+        <div class="member-card">
+            <h3>Irene Green</h3>
+            <p>General Manager</p>
+        </div>
+        <div class="member-card">
+            <h3>Jade Somers</h3>
+            <p>Sales Manager</p>
+        </div>
+        <div class="member-card">
+            <h3>Hal Hyland</h3>
+            <p>IT Manager</p>
+        </div>
+    </div>
+</section>
+
+<section id="news" class="news">
+    <h2>News & Updates</h2>
+    <p>COVID-19 adaptation: Remote learning solutions deployed.</p>
+    <p>Major sales growth despite global challenges.</p>
+    <p>Upcoming projects: Cloud solution, tablet expansion, B2C strategy.</p>
+
+    <!-- Video placeholder -->
+    <div class="video-container">
+        <video controls>
+            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Headquarters: Melbourne CBD, Australia</p>
+    <p>Email: <a href="mailto:info@worlducation.org">info@worlducation.org</a></p>
+    <p>Phone: +61 0432928858</p>
+    <p>Social Media: [LinkedIn] [Twitter] [Facebook]</p>
+    <a href="#about" class="cta-button">Join the Mission – Help End Illiteracy</a>
+</section>
+
+<footer>
+    <p>&copy; 2025 Worlducation. All rights reserved.</p>
+</footer>
+
+<!-- Optional: clickable map pins -->
+<script>
+    const pins = document.querySelectorAll('.map-pin');
+    pins.forEach(pin => {
+        pin.addEventListener('click', () => {
+            alert(`Location: ${pin.title}`);
+        });
+    });
+</script>
+
+</body>
+</html>
